@@ -4,7 +4,7 @@ import ast
 
 
 REST_URL = "http://data.bioontology.org"
-API_KEY = "0640b94d-63f7-49f3-9be5-f79354797620"
+API_KEY = "**********************"
 
 def get_json(url):
     opener = urllib2.build_opener()
