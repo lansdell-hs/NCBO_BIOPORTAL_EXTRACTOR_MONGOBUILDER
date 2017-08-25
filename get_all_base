@@ -2,7 +2,6 @@ import urllib2
 import json
 import ast
 
-
 REST_URL = "http://data.bioontology.org"
 API_KEY = "**********************"
 
@@ -22,7 +21,6 @@ for ontology in all_ontologies: #python if in logic
     if ontology["acronym"] in selected_ontologies:#== "BRO": #"BRO" or
         ont = ontology
         onts.append(ontology["acronym"])
-
 
 labels = []
 synonyms=[]
@@ -52,10 +50,3 @@ definitions_literal=ast.literal_eval(json.dumps(definitions))
 
 for label, definition in zip(labels_literal,definitions_literal):
     print (label,definition)
-
-#for synonym in synonyms:
- #   print synonym
-
-#for link in links_per_term:
- #   print link
-  #  print ""
